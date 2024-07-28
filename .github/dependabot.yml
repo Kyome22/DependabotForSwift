@@ -1,4 +1,10 @@
 version: 2
+registries:
+  private-libraries:
+    type: git
+    url: https://github.com
+    username: Kyome22
+    password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 updates:
   - package-ecosystem: "swift"
     directory: "/"
