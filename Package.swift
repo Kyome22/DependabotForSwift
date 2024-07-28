@@ -14,15 +14,15 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-composable-architecture.git", exact: "1.10.4"),
-        .package(url: "https://github.com/firebase/firebase-ios-sdk", exact: "10.28.1"),
+        .package(url: "https://github.com/apple/swift-async-algorithms.git", exact: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-log", exact: "1.6.1"),
     ],
     targets: [
         .target(
             name: "Sample",
             dependencies: [
-                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
-                .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
+                .product(name: "AsyncAlgorithms", package: "swift-async-algorithms"),
+                .product(name: "Logging", package: "swift-log"),
             ]
         ),
     ]
