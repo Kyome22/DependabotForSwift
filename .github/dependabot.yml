@@ -7,8 +7,8 @@ registries:
     password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 updates:
   - package-ecosystem: "swift"
+    directory: "/SamplePackages/"
     registries: "*"
-    directory: "/"
     schedule:
       interval: "monthly"
       timezone: "Asia/Tokyo"
